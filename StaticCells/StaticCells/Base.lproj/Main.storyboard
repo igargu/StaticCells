@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n3c-RV-srj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gestures-->
+        <scene sceneID="c2q-6z-Kce">
+            <objects>
+                <viewController id="ZhC-ew-zyx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kd5-w5-zRo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VEO-ja-UPh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="Gestures" id="0au-7Y-SKX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIo-Hn-UON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="PIY-JR-bhI" userLabel="Swip Left Gesture">
+                    <connections>
+                        <segue destination="TLy-tY-cmA" kind="show" id="hnl-03-ei6"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="24b-Jk-Mbv" userLabel="Swip Right Gesture">
+                    <connections>
+                        <segue destination="7qo-s0-Xmv" kind="show" id="02j-4P-pxE"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="116" y="475"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nJB-BT-Bgo">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="TLy-tY-cmA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hf2-S5-1us">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View From Swipe Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwm-ZX-h6R">
+                                <rect key="frame" x="125" y="411" width="164" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9GU-f9-tIq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hwm-ZX-h6R" firstAttribute="centerX" secondItem="hf2-S5-1us" secondAttribute="centerX" id="MGZ-vv-yqw"/>
+                            <constraint firstItem="Hwm-ZX-h6R" firstAttribute="leading" secondItem="9GU-f9-tIq" secondAttribute="leading" constant="125" id="eAK-1U-qHd"/>
+                            <constraint firstItem="Hwm-ZX-h6R" firstAttribute="top" secondItem="9GU-f9-tIq" secondAttribute="top" constant="367" id="qZJ-fx-iGX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gBl-5d-duf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9O-Ph-Avy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1178" y="214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UPS-vz-zYs">
+            <objects>
+                <viewController modalTransitionStyle="partialCurl" modalPresentationStyle="currentContext" id="7qo-s0-Xmv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="43l-b7-H94">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View From Swipe Right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTf-WU-CqL">
+                                <rect key="frame" x="120" y="438" width="174" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vtu-9z-nju"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cTf-WU-CqL" firstAttribute="centerX" secondItem="43l-b7-H94" secondAttribute="centerX" id="XYM-Gg-aMb"/>
+                            <constraint firstItem="cTf-WU-CqL" firstAttribute="top" secondItem="Vtu-9z-nju" secondAttribute="top" constant="394" id="cGP-9g-TwY"/>
+                            <constraint firstItem="cTf-WU-CqL" firstAttribute="leading" secondItem="Vtu-9z-nju" secondAttribute="leading" constant="120" id="rul-cY-QGa"/>
+                            <constraint firstItem="cTf-WU-CqL" firstAttribute="centerY" secondItem="43l-b7-H94" secondAttribute="centerY" id="sHd-V4-9Pz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lBQ-sL-GRj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WT9-fw-Fgp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1178" y="956"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Mcc-GT-0eH">
+            <objects>
+                <tabBarController id="n3c-RV-srj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wgr-VJ-qaS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yri-Wa-P7i" kind="relationship" relationship="viewControllers" id="rRk-C1-F6l"/>
+                        <segue destination="ZhC-ew-zyx" kind="relationship" relationship="viewControllers" id="83f-C1-deV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1P-td-iqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-798" y="-60"/>
+        </scene>
+        <!--Player-->
+        <scene sceneID="rj2-LV-bHX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Player" id="yri-Wa-P7i" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Nob-du-rkQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXq-gI-sEO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.875" y="-473.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gestures" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
